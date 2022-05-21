@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ae-lexs/ae_star_wars_searcher/compare/v1.0.0...v1.1.0) (2022-05-21)
+
+
+### Features
+
+* Add CircleCI badge to README. ([8237fd5](https://github.com/ae-lexs/ae_star_wars_searcher/commit/8237fd551070be3f779c17595de88bdf389d452a))
+
 # 1.0.0 (2022-05-21)
 
 
