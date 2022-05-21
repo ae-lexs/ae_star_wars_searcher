@@ -2,6 +2,8 @@
 
 Star Wars Searcher API
 
+[![ae_star_wars_searcher](https://circleci.com/gh/ae-lexs/ae_star_wars_searcher.svg?style=svg)](https://circleci.com/gh/ae-lexs/ae_star_wars_searcher)
+
 ## Requirements
 
 [poetry >= 1.1.13](https://python-poetry.org/docs/#installation)
