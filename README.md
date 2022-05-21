@@ -2,10 +2,14 @@
 
 Star Wars Searcher API
 
+## Requirements
+
+[poetry >= 1.1.13](https://python-poetry.org/docs/#installation)
+
 ## Installation 
 
 ```sh
-go get
+poetry install
 ```
 
 ## Usage
