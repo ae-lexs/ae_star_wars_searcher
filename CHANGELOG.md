@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/ae-lexs/ae_star_wars_searcher/compare/v1.2.0...v1.2.1) (2022-05-22)
+
+
+### Bug Fixes
+
+* Call the right test command in the test job. ([05179ff](https://github.com/ae-lexs/ae_star_wars_searcher/commit/05179fff261f8c32efe305df29b980ef9b539ceb))
+* Use poetry run to run the make command. ([dbc994c](https://github.com/ae-lexs/ae_star_wars_searcher/commit/dbc994cfa2db4e1621e2dc7066335e408283057d))
+
 # [1.2.0](https://github.com/ae-lexs/ae_star_wars_searcher/compare/v1.1.0...v1.2.0) (2022-05-22)
 
 
