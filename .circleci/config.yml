@@ -4,6 +4,9 @@ executors:
   node:
     docker:
       - image: cimg/node:16.14.0
+  python:
+    docker:
+      - image: cimg/python:3.7.12
 
 jobs:
   generate_release:
@@ -16,10 +19,34 @@ jobs:
             sudo npm i -g @semantic-release/changelog @semantic-release/git semantic-release
             semantic-release
 
+  test:
+    executor: python
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - python-poetry-v1-{{ checksum "poetry.lock" }}
+      - run:
+          name: Install Dependencies
+          command: poetry install
+      - save_cache:
+          paths:
+            - "/python/poetry"
+          key: python-poetry-v1-{{ checksum "poetry.lock" }}
+      - run:
+          name: Run Tests
+          command: make test
+
 workflows:
   development:
     jobs:
+      - test:
+          filters:
+            branches:
+              only: main
       - generate_release:
           filters:
             branches:
               only: main
+          requires:
+            - test
