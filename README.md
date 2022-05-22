@@ -37,5 +37,5 @@ make lint
 ### Run Tests
 
 ```sh
-make test
+make tests
 ```
